@@ -8,6 +8,7 @@
       font-family: Arial, sans-serif;
       background-color: #f9f9f9;
       color: #333;
+      overflow-x: hidden;
    }
 
    #seletor-idioma {
@@ -38,7 +39,8 @@
    }
 
    .topo {
-      width: 800px;
+      max-width: 1000px;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -56,8 +58,10 @@
 
    main {
       margin: auto;
-      margin-top: 210px;
-      width: 800px;
+      margin-top: 200px;
+      max-width: 1000px; /* limite até 1000px */
+   width: 100%;      /* ocupa a tela toda em telas menores */
+   padding: 10px;    /* dá um respiro nas bordas */
    }
 
    .container {
@@ -148,7 +152,7 @@
    figcaption{
       padding: 5px;
       color: #444;
-      height: 45px;
+      height: auto;
       text-align: center;
       background-color: #eaeaea;
       border-radius:  0 0 8px 8px;
@@ -170,13 +174,13 @@
 
    footer {
       width: 100%;
+      height: auto;
+      margin: 0;
       margin-top: 40px;
       padding: 20px;
       background-color: #2E7D32;
       color: #fff;
-      border-top: 1px solid #ccc;
       text-align: center;
-      border: 1px solid;
    }
 
    footer a {
@@ -195,3 +199,84 @@
    .social-links {
    padding: 5px;
    }
+
+   
+/* ---------------------- */
+/* 📱 RESPONSIVIDADE */
+/* ---------------------- */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+   main {
+      margin-top: 210px;
+      padding: 15px;
+   }
+   .atrativo {
+      gap: 10px;
+   }
+}
+
+/* Celulares médios (até 768px) */
+@media (max-width: 768px) {
+   header {
+      height: auto;
+      text-align: center;
+   }
+
+   .topo {
+      padding: 10px;
+   }
+
+   main {
+      margin-top: 210px;
+      padding: 15px;
+   }
+
+   .atrativo {
+      flex-direction: column; /* cards empilhados */
+   }
+
+   .card2, .card3, .card4 {
+      min-height: 200px;
+      border-radius: 0 0 8px 8px; /* arredondar só embaixo */
+   }
+
+   iframe {
+      height: 220px;
+   }
+   footer{
+      height: 200px;
+      margin-top: 5px;
+   }
+}
+
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+   main{
+      margin-top: 240px;
+   }
+   h1 {
+      font-size: 1.4em;
+   }
+
+   .topo p {
+      font-size: 0.9em;
+      text-align: justify;
+   }
+
+   .icon-link {
+      font-size: 12px;
+      padding: 4px;
+   }
+
+   iframe {
+      height: 180px;
+   }
+
+   footer{
+      height: 220px;
+      margin-top: 5px;
+   }
+
+}
