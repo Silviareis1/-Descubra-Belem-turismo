@@ -18,12 +18,12 @@ O site está disponível em **quatro idiomas**:
 
 | Idioma | Link | Pré-visualização |
 |--------|------|-----------------|
-| 🇧🇷 Português | [index.html](https://github.com/Silviareis1/Silviareis1/blob/main/index.html) | ![Português](img/index-pt-br.png) |
-| 🇺🇸 English | [index-en.html](https://github.com/Silviareis1/Silviareis1/blob/main/index-en.html) | ![English](img/index-en.png) |
-| 🇪🇸 Español | [index-es.html](https://github.com/Silviareis1/Silviareis1/blob/main/index-es.html) | ![Español](img/index-es.png) |
-| 🇨🇳 中文 | [index-zh.html](https://github.com/Silviareis1/Silviareis1/blob/main/index-zh.html) | ![中文](img/index-zh.png) |
+| 🇧🇷 Português | [index.html](https://silviareis1.github.io/-Descubra-Belem-turismo/) | ![Português](img/index-pt-br.png) |
+| 🇺🇸 English | [index-en.html](https://silviareis1.github.io/-Descubra-Belem-turismo/index-en.html) | ![English](img/index-en.png) |
+| 🇪🇸 Español | [index-es.html](https://silviareis1.github.io/-Descubra-Belem-turismo/index-es.html) | ![Español](img/index-es.png) |
+| 🇨🇳 中文 | [index-zh.html](https://silviareis1.github.io/-Descubra-Belem-turismo/index-zh.html) | ![中文](img/index-zh.png) |
 
-> Obs.: As imagens de pré-visualização devem ser capturas reais da página e hospedadas em um serviço de imagens como [ImgBB](https://imgbb.com/) ou GitHub.
+<!-- > Obs.: As imagens de pré-visualização devem ser capturas reais da página e hospedadas em um serviço de imagens como [ImgBB](https://imgbb.com/) ou GitHub. -->
 
 ---
 
@@ -72,8 +72,8 @@ O site está disponível em **quatro idiomas**:
 
 ## 🌐 Links
 
-- Repositório GitHub: [Silviareis1](https://github.com/Silviareis1/Silviareis1)  
-- GitHub Pages (pré-visualização online): [https://silviareis1.github.io/Silviareis1/](https://silviareis1.github.io/Silviareis1/)  
+- Repositório GitHub: [Silviareis1](https://github.com/Silviareis1/-Descubra-Belem-turismo)  
+- GitHub Pages (pré-visualização online): [Descubra Belém do Pará](https://silviareis1.github.io/-Descubra-Belem-turismo/)  
 
 ---
 
