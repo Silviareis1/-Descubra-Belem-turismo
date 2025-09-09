@@ -5,18 +5,20 @@
    }
 
    body {
-      font-family: Arial, sans-serif;
+   font-family: Arial, sans-serif;
    background-color: #f9f9f9;
+   color: #333;
+   overflow-x: hidden;
    }
 
    #selector-idioma {
       text-align: right;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       display: flex;
       justify-content: flex-end;
    }
    header {
-      padding: 20px;
+      padding: 10px;
       position: fixed;
       top: 0;
       left: 0;
@@ -31,11 +33,12 @@
       z-index: 1000;
    }
    h1{
-      margin-bottom: 10px;
+      margin-bottom: 15px;
    }
 
    .topo {
-      width: 800px;
+      max-width: 1000px;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -53,8 +56,11 @@
 
    main {
       margin: auto;
-      margin-top: 210px;
-      width: 800px;
+      margin-top: 200px;
+      max-width: 1000px; /* limite até 1000px */
+      width: 100%;  /* ocupa a tela toda em telas menores */
+      padding: 10px; /* dá um respiro nas bordas */
+
    }
 
    .container {
@@ -97,7 +103,7 @@
    text-decoration: none;
    background-color: #1565C0;;
    padding: 5px;
-   border: 1px solid  #1565C0;;
+   border: 1px solid  #1565C0;
    border-radius: 4px;
    color: #ffff;
    transition: background-color 0.3s ease;
@@ -107,46 +113,43 @@
    background-color: rgba(255, 255, 255, 0.9);
    color: #1565C0;
 }
-      .card3 {
-      display: flex;
-      flex: 1;
-      background-image: url(https://img.cmswebsg.com.br/belem.com.br/image?src=https://belem.com.br/images/noticias/15977/17085053_Capa_matri.png&w=800&h=600&output=webp);
-       /* Caminho da imagem */
-      background-size: cover;
-       /* Faz a imagem cobrir toda a tela */
-      background-repeat: no-repeat;
-      background-position: center;
+.card3 {
+   display: flex;
+   flex: 1;
+   background-image: url(https://img.cmswebsg.com.br/belem.com.br/image?src=https://belem.com.br/images/noticias/15977/17085053_Capa_matri.png&w=800&h=600&output=webp); /* Caminho da imagem */
+   background-size: cover; /* Faz a imagem cobrir toda a tela */
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 0  8px 8px 0 ;
    }
 
-      .card4 {
-      display: flex;
-      flex: 1;
-      background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/64/46/45/mangal-das-garcas.jpg?w=1200&h=700&s=1);
-       /* Caminho da imagem */
-      background-size: cover;
-       /* Faz a imagem cobrir toda a tela */
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius: 0  8px 8px 0 ;
+.card4 {
+   display: flex;
+   flex: 1;
+   background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/64/46/45/mangal-das-garcas.jpg?w=1200&h=700&s=1); /* Caminho da imagem */
+   background-size: cover; /* Faz a imagem cobrir toda a tela */
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 0  8px 8px 0 ;
    }
-   .card5 {
+.card5 {
       width: 100%;
       height: 270px;
       border-radius: 0  8px 8px 0 ;
    }
-   iframe{
-      margin: 0;
-      width: 100%;
-      height: 270px;
-      border-radius:  8px 8px 0 0;
+iframe{
+   margin: 0;
+   width: 100%;
+   height: 270px;
+   border-radius:  8px 8px 0 0;
    }
-      figcaption{
-      padding: 5px;
-      color: #444;
-      height: 45px;
-      text-align: center;
-      background-color: #eaeaea;
-      border-radius:  0 0 8px 8px;
+figcaption{
+   padding: 5px;
+   color: #444;
+   height: auto;
+   text-align: center;
+   background-color: #eaeaea;
+   border-radius:  0 0 8px 8px;
    }
    .atraccion h2 {
       color: #1565C0;
@@ -164,13 +167,12 @@
 
    footer {
       width: 100%;
+      height: auto;
       margin-top: 40px;
       padding: 20px;
       background-color: #2E7D32;
       color: #fff;
-      border-top: 1px solid #ccc;
       text-align: center;
-      border: 1px solid;
    }
    footer a{
       color: #FBC02D;
@@ -186,3 +188,100 @@
    .social-links{
       padding: 5px;
    }
+
+   
+/* ---------------------- */
+/* 📱 RESPONSIVIDADE */
+/* ---------------------- */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+   header{
+      text-align: justify;
+      line-height: 20px;
+   }
+   main {
+      margin-top: 210px;
+      padding: 15px;
+      width: 100%;
+   }
+   .atraccion {
+      gap: 10px;
+   }
+}
+
+/* Celulares médios (até 768px) */
+@media (max-width: 768px) {
+   header {
+      height: auto;
+      text-align: justify;
+   }
+
+     h1 {
+      font-size: 1.4em;
+      line-height: 1.3em;
+      margin-top: 15px;   /* afasta do conteúdo acima */
+      margin-bottom: 10px; 
+   }
+
+   .topo {
+      padding: 10px;
+      width: 100%;
+   }
+
+   main {
+      margin-top: 240px;
+      padding: 15px;
+      width: 100%;
+   }
+
+   .atraccion {
+      flex-direction: column; /* cards empilhados */
+   }
+
+   .card2,
+   .card3,
+   .card4 {
+      min-height: 200px;
+      border-radius: 0 0 8px 8px; /* arredondar só embaixo */
+   }
+
+   iframe {
+      height: 220px;
+   }
+
+   footer {
+      height: auto;
+      margin-top: 5px;
+   }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+   main {
+      margin-top: 240px;
+   }
+
+   h1 {
+      font-size: 1.4em;
+   }
+
+   .topo p {
+      font-size: 0.9em;
+      text-align: justify;
+   }
+
+   .icon-link {
+      font-size: 12px;
+      padding: 4px;
+   }
+
+   iframe {
+      height: 180px;
+   }
+
+   footer {
+      height: auto;
+      margin-top: 5px;
+   }
+}
