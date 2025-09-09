@@ -58,7 +58,7 @@
 
    main {
       margin: auto;
-      margin-top: 200px;
+      margin-top: 220px;
       max-width: 1000px; /* limite até 1000px */
       width: 100%;      /* ocupa a tela toda em telas menores */
       padding: 10px;    /* dá um respiro nas bordas */
@@ -237,7 +237,7 @@
    }
 
    main {
-      margin-top: 240px;
+      margin-top: 235px;
       padding: 15px;
       width: 100%;
    }
@@ -264,7 +264,7 @@
 /* Celulares pequenos (até 480px) */
 @media (max-width: 480px) {
    main{
-      margin-top: 240px;
+      margin-top: 260px;
    }
    h1 {
       font-size: 1.4em;
